@@ -1312,6 +1312,28 @@ form textarea {
     font-weight: 300;
     color: white; }
 
+.photo-title{
+  width: max-content;
+  font-size: 36px;
+  font-weight: 300;
+  color: white;
+}
+
+.photo-block {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  overflow-x: scroll;
+  gap: 40px;
+}
+
+.photo-block a img {
+  object-fit: cover;
+  height: auto;
+  width: 350px;
+}
+
 .filter {
   margin-bottom: 30px; }
 
