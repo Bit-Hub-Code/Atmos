@@ -1512,27 +1512,37 @@ form textarea {
     color: #009ad8; }
 
 .photo {
-  position: relative;
-  padding-left: 50%;
-  min-height: 190px;
+  display: flex;
+  flex-direction: column;
+  background: #262936;
   border-radius: 10px;
   overflow: hidden;
-  background: #262936;
-  margin-bottom: 30px; }
-  .photo .photo-preview {
-    position: absolute;
-    width: 50%;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    background-size: cover; }
-  .photo .photo-details {
-    padding: 20px; }
-  .photo .photo-title {
-    margin-bottom: 10px;
-    font-weight: 300; }
-    .photo .photo-title a {
-      color: white; }
+  margin-bottom: 30px;
+}
+
+.photo-preview {
+  height: 200px; /* Фиксированная высота для изображения */
+  background-size: cover;
+  background-position: center;
+}
+
+.photo-details {
+  padding: 20px;
+  flex: 1; /* Занимает оставшееся пространство */
+}
+
+.photo-title {
+  margin-bottom: 10px;
+  font-weight: 300;
+}
+
+.photo-title a {
+  color: white;
+}
+
+.star-rating {
+  margin-top: 10px;
+}
 
 .star-rating {
   float: none;
